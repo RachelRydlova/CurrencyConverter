@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Currency converter</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Currency converter</h1>
+        </div>
+        <div class="date">2019-10-17</div>
+        <ul class="currencies">
+            <!--    <li class="currency base-currency" id="USD">
+                <img src="https://www.crwflags.com/fotw/images/u/us-1818.gif" class="flag">
+                <div class="info">
+                    <p class="input"><span class="currency-symbol">&#36;</span><input placeholder="0.000"></p>
+                    <p class="currency-name">USD - US dollar</p>
+                    <p class="base-currency-rate">1 USD = 1 USD</p>
+                </div>
+                <span class="close">&times;</span>
+            </li>
+            <li class="currency" id="JPY">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAhFBMVEX///+8AC25ABe7ACe7ACq3AAC5ABu6ACS4ABK7ACi4AAu6ACLnuL+6AB/14OT35ej9+frx1NnpwMbsx8356+3gpq24AA3tzNC/GTnKUWTEOVD78fPls7rYiZTSdYLDL0nBJkLFPlTMXG3PannfoqrXhJDemqTUeIa+DTPgo6zkrbXakJsyU7gkAAADmElEQVR4nO3diXaiMBSA4YKgAcG9bnXcutn2/d9vpB7HdhJbWcI90f97Au49IRvh5u4OAAAAAAAAAAAAAAAAAABket3+ZJAsksGk3+1JP4y43uRpOffieKz8jBrHsTdfPk1uNjPD51Womu0o8L4KonZThavn4c3lpZdslUoj75woVWqb3FJa+kvfb53Nx1HLby770o9ak8EmbP+akIN2OE+kH7cGi6lqXJiRz5dITRfSj2zZcK3OdyJmgVoPpR/botEszJuRz7YSzkbSj27LS/x7x2rWil+kH96K0VwVzEhGza+wqSziPF2rrhFfXV/7GpbKSCZcSgdRqd7GL50Sz/PnVzSxHe0unaT9rL27mk6lk5brSk4aaUc6mGp0/CKTErPIv4qkdFTwe6wXC9QVJKX7w45AoaSkXemQyurtqupLjqKd66PPquh0/rzWSjqoch6blafE85qP0mGV8R5bSInnxe/SgRXXLT+hNwvd7WfXVfevR421dGhFfVSxyDHzP6SDK6Zj683JhG5O3Ta23pxMYyMdXhGJnTHnKB5IB1iAV+UyRxd40gHm92avgz3w36RDzC2y20z2DSWQDjGvd9vNZN9QXJvNTm03k31DmUoHmc9wbD0lnjd265vptvotAl1rKx1mHg82p7An8YN0oDm82dg20TXvpQPNweq0/sSlCf6D3Wn9iUMvz8L+5OTAd+e7+mM1n0J/13ZnZza1P2E7CNrSoV6qW1d3su9QXNmYTerqTvYdiitHRf+kteUk/SMd7IVm9cxOMo2ZdLAXqmFNfOTM2ri+LnbfyUoHe5kahx1nBp5+mXOweSk3/twY1DcU7wdjNz5p1LAV+yUnbmzK3tezeXLgyBYKOdGREx050ZETHeOOjvmJjnmsjvWOAetiHfsnOvbZdOzH6ti31/F9x4DvgDq+F+s4V6Dj/IkB55R0nGfT1fTyuPTqcD7WhHPUBjWsjSNX1sRH/JdhEPD/job/vAz4H1CX2B16xq7snHzD/8U6/kM3oF6BAXUtdNQ/MaBOjsHSSj0lx4th2qi7NZcOqqTq67M1nK/PVnkdv8j9On7UezSiLqgB9WMNqDNsUFE96o3zI843VdQtf5UOomrUtzfgHgSTlzH3ZWi4V8WkwP070XXfv5NJpmPuadJwn5dJf9lUF9z7pm7n3rcM9wOacY+kUXbf6Oa/+0Y3t3zf6D/cSwsAAAAAAAAAAAAAAAAAgO4vHvpJXmyRg6QAAAAASUVORK5CYII="
+                    class="flag">
+                <div class="info">
+                    <p class="input"><span class="currency-symbol">&#165;</span><input placeholder="0.000"></p>
+                    <p class="currency-name">JPY - Japanese Yen</p>
+                    <p class="base-currency-rate">1 USD = 111.0401 JPY</p>
+                </div>
+                <span class="close">&times;</span>
+            </li>
+            <li class="currency" id="GBP">
+                <img src="https://www.warstore.co.uk/ekmps/shops/marlina/images/union-jack-great-britain-5-x-3-flag-3603-p[ekm]400x201[ekm].jpg" class="flag">
+                <div class="info">
+                    <p class="input"><span class="currency-symbol">&#163;</span><input placeholder="0.000"></p>
+                    <p class="currency-name">GBP - British Pound</p>
+                    <p class="base-currency-rate">1 USD = 0.7805 GBP</p>
+                </div>
+                <span class="close">&times;</span>
+            </li>
+            <li class="currency" id="RUB">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/Flag_of_Russia.svg/255px-Flag_of_Russia.svg.png" class="flag">
+                <div class="info">
+                    <p class="input"><span class="currency-symbol">&#8381;</span><input placeholder="0.000"></p>
+                    <p class="currency-name">RUB - Russian Ruble</p>
+                    <p class="base-currency-rate">1 USD = 66.9615 RUB</p>
+                </div>
+                <span class="close">&times;</span>
+            </li>
+            <li class="currency" id="CNY">
+                <img src="https://cdn.britannica.com/90/7490-004-415899A0/Flag-China.jpg" class="flag">
+                <div class="info">
+                    <p class="input"><span class="currency-symbol">&#165;</span><input placeholder="0.000"></p>
+                    <p class="currency-name">CNY - Chinese Yuan Renminbi</p>
+                    <p class="base-currency-rate">1 USD = 6.7756 CNY</p>
+                </div>
+                <span class="close">&times;</span>
+            </li>
+            <li class="currency" id="INR">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/255px-Flag_of_India.svg.png" class="flag">
+                <div class="info">
+                    <p class="input"><span class="currency-symbol">&#8377;</span><input placeholder="0.000"></p>
+                    <p class="currency-name">INR - Indian Rupee</p>
+                    <p class="base-currency-rate">1 USD = 71.1777 INR</p>
+                </div>
+                <span class="close">&times;</span>
+            </li> -->
+        </ul>
+        <button class="add-currency-btn"><i class="fas fa-long-arrow-alt-left"></i>Add currency</button>
+        <ul class="add-currency-list">
+            <!-- <li data-currency="USD" class="disabled"> <img src="https://www.crwflags.com/fotw/images/u/us-1818.gif" class="flag"><span>USD - US Dollar</span></li>
+            <li data-currency="NZD"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Flag_of_New_Zealand.svg/120px-Flag_of_New_Zealand.svg.png" class="flag"><span>NZD - New Zealand Dollar</span></li>
+            <li data-currency="CAD"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/110px-Flag_of_Canada_%28Pantone%29.svg.png" class="flag"><span>CAD - Canadian Dollar</span></li>
+            <li data-currency="MXN"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/110px-Flag_of_Mexico.svg.png" class="flag"><span>MXN - Mexican Peso</span></li> -->
+        </ul>
+
+    </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
